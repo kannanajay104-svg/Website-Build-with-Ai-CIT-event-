@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Lost in Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="space-background">
+            <div class="stars"></div>
+            <div class="stars stars2"></div>
+            <div class="stars stars3"></div>
+            <div class="planet"></div>
+            <div class="astronaut" id="astronaut">
+                <div class="astronaut-body">
+                    <div class="helmet">
+                        <div class="helmet-glass"></div>
+                    </div>
+                    <div class="backpack"></div>
+                    <div class="left-arm"></div>
+                    <div class="right-arm"></div>
+                    <div class="left-leg"></div>
+                    <div class="right-leg"></div>
+                </div>
+            </div>
+            <div class="spaceship" id="spaceship">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="satellite" id="satellite">
+                <i class="fas fa-satellite"></i>
+            </div>
+        </div>
+        
+        <div class="error-content">
+            <div class="error-number">
+                <span class="digit">4</span>
+                <span class="digit zero">
+                    <div class="zero-inner">0</div>
+                </span>
+                <span class="digit">4</span>
+            </div>
+            
+            <h1 class="error-title">Lost in Space</h1>
+            
+            <p class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                Oops! The page you're looking for has drifted off into the cosmic void.
+            </p>
+            
+            <div class="emoji-display">
+                <div class="emoji">🚀</div>
+                <div class="emoji">🛸</div>
+                <div class="emoji">👨‍🚀</div>
+                <div class="emoji">🌌</div>
+                <div class="emoji">🪐</div>
+            </div>
+            
+            <p class="error-description">
+                Don't panic! While our digital astronauts search for your page, 
+                you can return to safety by clicking the button below.
+            </p>
+            
+            <div class="action-buttons">
+                <button class="btn home-btn" id="homeBtn">
+                    <i class="fas fa-home"></i> Return to Home
+                </button>
+                <button class="btn explore-btn" id="exploreBtn">
+                    <i class="fas fa-compass"></i> Explore Galaxy
+                </button>
+                <button class="btn contact-btn" id="contactBtn">
+                    <i class="fas fa-headset"></i> Mission Control
+                </button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search the cosmos...">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="space-facts">
+                <p><i class="fas fa-info-circle"></i> <span id="spaceFact">Did you know? Space is completely silent because there's no air to carry sound.</span></p>
+            </div>
+            
+            <div class="countdown">
+                <p>Returning to home in: <span id="countdownTimer">10</span> seconds</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Cosmic Navigation Systems &copy; <span id="currentYear"></span> | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
